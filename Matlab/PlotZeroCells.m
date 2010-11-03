@@ -17,7 +17,7 @@ function PlotZeroCells(dataSet, boolSaveFigure, basis1, basis2)
 %   PlotZeroCells('SocialNetwork', 1)
 
 data = importdata([dataSet, '.txt']);
-zeroCells = importdata([dataSet, '_0cells_ordered.txt.']);
+zeroCells = importdata([dataSet, '_0cells_ordered.txt']);
 
 if nargin < 4
     [coeff, score] = princomp(data);

@@ -20,7 +20,7 @@ function PlotZeroCellTrial(dataSet, boolSaveFigure, basis1, basis2)
 forces = importdata([dataSet, '_0forces.txt']);
 h1 = figure;
 plot(forces);
-h2 = legend('gradient force norm', 1, 'Location', 'NorthEast');
+h2 = legend('mean shift distance to move: ||m(y) - y||', 1, 'Location', 'NorthEast');
 set(h2, 'Interpreter', 'none');
 
 data = importdata([dataSet, '.txt']);
